@@ -8,11 +8,16 @@ const Home = (props) => {
     const StyledDeleteButton = styled.button`
     color:${(props)=> props.username == 'honh' ? "blue" : "red"} 
     `;
+    const StyledAddButton = styled(StyledDeleteButton)`
+      color:${(props)=> props.username == 'honh' ? "blue" : "red"};
+      background-color: green;
+    `;
+
 
 
     return (
         <div>
-            <h1>홈페이지 입니다.</h1>
+            <StyledAddButton>더하기</StyledAddButton>
             <StyledDeleteButton user={user} onClick={()=> setBoards([])}>
                 전체삭제
             </StyledDeleteButton>
