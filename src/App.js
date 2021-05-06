@@ -1,20 +1,21 @@
-import styled from 'styled-components';
 import './App.css';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import {Route} from 'react-router-dom';
+import LoginPage from "./pages/LoginPage";
 
-const Title = styled.h1`
-    font-size:1.5em;
-      text-align: center;
-      color: palevioletred;
-    `;
+
 function App() {
 
 
   return (
       <div>
-          <Header/>
-          <Footer/>
+          <Header />
+          <Route path="/" exact={true} component={Homepage} />
+          <Route path="/login" exact={true} component={LoginPage} />
+
+          <Footer />
       </div>
   );
 }

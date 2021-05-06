@@ -1,7 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import userEvent from "@testing-library/user-event";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import Home from "../components/home/Home";
 
 const Homepage = () => {
@@ -24,9 +22,7 @@ const Homepage = () => {
 
     return (
         <div>
-            <Header/>
             <Home boards={boards} setBoards={setBoards} user={user}/>
-            <Footer/>
         </div>
     );
 };

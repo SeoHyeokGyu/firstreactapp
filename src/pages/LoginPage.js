@@ -1,14 +1,16 @@
 import React from 'react';
 import Login from "../components/Login";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 
-const LoginPage = () => {
+
+const LoginPage = (props) => {
+    const {history} = props;
+    console.log(props.match.params.id)
     return (
         <div>
-            <Header/>
-            <LoginPage/>
-            <Footer/>
+
+            <button onClick={()=>history.goBack()
+            }>뒤로가기</button>
+            <Login />
         </div>
     );
 };
