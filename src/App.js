@@ -1,9 +1,8 @@
 import './App.css';
-import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Homepage from "./pages/Homepage";
+import ListPage from "./page/ListPage";
 import {Route} from 'react-router-dom';
-import LoginPage from "./pages/LoginPage";
+import Navigation from "./components/Navigation";
 
 
 function App() {
@@ -11,9 +10,8 @@ function App() {
 
   return (
       <div>
-          <Header />
-          <Route path="/" exact={true} component={Homepage} />
-          <Route path="/login" exact={true} component={LoginPage} />
+          <ListPage/>
+
 
           <Footer />
       </div>
