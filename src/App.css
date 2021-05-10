@@ -1,3 +1,15 @@
+.sub_container{
+  height: 25vmin;
+  border:2px solid black;
+}
+
+.container{
+  height: 70vmin;
+  border: 2px solid black;
+}
+div{
+  padding: 10px;
+}
 .App {
   text-align: center;
 }
