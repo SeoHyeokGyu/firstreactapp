@@ -1,10 +1,11 @@
 import React from 'react';
 import '../App.css';
+import {useSelector} from "react-redux";
+import store from "../store";
 
-const Top = (props) => {
+const Top = () => {
 
-
-    const {number} = props;
+    const number = useSelector((store)=> store.number)
 
     return (
         <div className='sub_container'>
